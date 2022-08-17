@@ -24,7 +24,7 @@ interface Props {
 
 const Story: NextPage = () => {
     return (
-        <div className="rounded-lg bg-black h-1/2 w-3/4">
+        <div className="rounded-lg bg-black h-1/2 w-3/4 max-w-sm">
             <div className="flex h-16 bg-[#1C1C1E] rounded-t-lg p-4 items-center justify-center w-full">
                 <div className="rounded-full h-10 w-10 bg-logo bg-black bg-auto bg-center bg-no-repeat">
                 </div>
