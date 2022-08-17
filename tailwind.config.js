@@ -9,7 +9,8 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'hero': "url('../public/whosGamingLogo/cover.png')"
+        'hero': "url('../public/whosGamingLogo/cover.png')",
+        'logo': "url('../public/whosGamingLogo/logo.png')"
       },
     },
   },
