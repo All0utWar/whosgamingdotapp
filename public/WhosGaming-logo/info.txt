@@ -1,0 +1,14 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: LeagueMono-ExtraBold
+font link: https://www.tylerfinck.com/shop/league-mono/
+font author: Tyler Finck
+font author site: https://www.tylerfinck.com/
+Slogan Font: Questrial-Regular.otf
+
+icon designer: Ben Davis
+icon designer link: /smashicons
+        
+{"bg":"#591F82","icon":"#F9B200","font":"#FFFFFF","slogan":"#ffffff"}
+      
