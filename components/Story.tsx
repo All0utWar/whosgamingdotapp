@@ -24,7 +24,7 @@ interface Props {
 
 const Story: NextPage = () => {
     return (
-        <div className="flex flex-col rounded-3xl bg-white  w-3/4 max-w-sm border-4 border-black">
+        <div className="flex flex-col rounded-3xl bg-white min-h-[524px] w-3/4 max-w-[320px] border-4 border-black">
             <div className="flex flex-col bg-[#ECECED] rounded-t-3xl  items-center w-full border-b border-[#E9E9EB]">
                 <div className="bg-black w-1/2 z-20 h-5 rounded-b-xl flex justify-center items-center">
                     <div className="flex gap-1">
