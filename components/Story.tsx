@@ -13,9 +13,9 @@ interface Props {
   const Message: NextPage<Props> = ({time, text, response }) => {
     return (
         <div className="flex flex-col space-y-2">
-            <span className="text-[#EBEBF5]/60 self-center text-xs">{time}</span>
+            <span className="text-[#8A8A8D] self-center text-xs">{time}</span>
             <p 
-                className={classNames("text-white text-xs p-2 rounded-md w-fit max-w-[65%] ", response ? "bg-green-400 self-end" : "bg-[#1C1C1E] self-start")}>
+                className={classNames("text-xs p-2 rounded-lg w-fit max-w-[65%] shadow-md", response ? "bg-[#6ACE6B] text-white self-end" : "bg-[#E9E9EB] text-black self-start")}>
                 {text}
             </p>
         </div>)
@@ -24,10 +24,19 @@ interface Props {
 
 const Story: NextPage = () => {
     return (
-        <div className="rounded-lg bg-black h-1/2 w-3/4 max-w-sm">
-            <div className="flex h-16 bg-[#1C1C1E] rounded-t-lg p-4 items-center justify-center w-full">
-                <div className="rounded-full h-10 w-10 bg-logo bg-black bg-auto bg-center bg-no-repeat">
+        <div className="flex flex-col rounded-3xl bg-white  w-3/4 max-w-sm border-4 border-black">
+            <div className="flex flex-col bg-[#ECECED] rounded-t-3xl  items-center w-full border-b border-[#E9E9EB]">
+                <div className="bg-black w-1/2 z-20 h-5 rounded-b-xl flex justify-center items-center">
+                    <div className="flex gap-1">
+                        <div className="h-1 w-6 rounded-lg bg-slate-700"></div>
+                        <div className="h-1 w-1 rounded-full bg-slate-700"></div>
+                    </div>
                 </div>
+                <div className="flex flex-col justify-center items-center space-y-1 mt-3 mb-1">
+                    <div className="rounded-full h-10 w-10 bg-logo bg-black bg-auto bg-center bg-no-repeat"></div>
+                    <p className="text-xs text-black">WhosGaming</p>
+                </div>
+
             </div>
             <motion.div className="p-4 space-y-3">
                 <Message 
