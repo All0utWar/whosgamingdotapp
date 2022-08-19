@@ -36,7 +36,7 @@ const Story: NextPage = () => {
                     response={true}
                     initial={{opacity:0, x: 20}}
                     animate={{ opacity:1, x: 0 }}
-                    transition={{ delay:4, type:'spring', stiffness: 20}}
+                    transition={{ delay:3, type:'spring', stiffness: 20}}
                 />
                 <Message 
                     time="Today, 6:00PM"
@@ -44,7 +44,7 @@ const Story: NextPage = () => {
                     response={false}
                     initial={{opacity:0, x: -20}}
                     animate={{ opacity:1, x: 0 }}
-                    transition={{ delay:7, type:'spring', stiffness: 20}}
+                    transition={{ delay:5, type:'spring', stiffness: 20}}
                 />
             </div>
             <div className='flex p-2 justify-between items-center gap-2 px-4 pb-3'>
