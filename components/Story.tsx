@@ -11,17 +11,25 @@ interface Props {
     time?: string,
     text: string,
     response: boolean,
+    animate?: object,
+    transition?: object,
+    initial?: object,
   }
 
-  const Message: NextPage<Props> = ({time, text, response }) => {
+  const Message: NextPage<Props> = ({time, text, response, animate, transition, initial }) => {
     return (
-        <div className="flex flex-col space-y-2">
+        <motion.div
+            initial={initial}
+            className="flex flex-col space-y-2"
+            animate={animate}
+            transition={transition}
+        >
             <span className="text-[#8A8A8D] self-center text-xs">{time}</span>
             <p 
                 className={classNames("text-xs p-2 rounded-lg w-fit max-w-[65%] shadow-md", response ? "bg-[#6ACE6B] text-white self-end" : "bg-[#E9E9EB] text-black self-start")}>
                 {text}
             </p>
-        </div>)
+        </motion.div>)
   }
 
 const Story: NextPage = () => {
@@ -40,22 +48,31 @@ const Story: NextPage = () => {
                 </div>
 
             </div>
-            <motion.div className="p-4 space-y-3 mb-auto">
-                <Message 
+            <div className="p-4 space-y-3 mb-auto">
+                <Message
                     time = "Today, 12:00PM"
                     text = 'Are you gaming tonight? Please respond following example format: &quot;yes @ 8:00PM&quot; or simply &quot;no&quot;.'
                     response={false}
+                    initial={{opacity:0, x: -20}}
+                    animate={{ opacity:1, x: 0 }}
+                    transition={{ delay:1,type:'spring', stiffness: 20}}
                 />
                 <Message 
                     text = 'Yes @ 7:30PM'
                     response={true}
+                    initial={{opacity:0, x: 20}}
+                    animate={{ opacity:1, x: 0 }}
+                    transition={{ delay:4, type:'spring', stiffness: 20}}
                 />
                 <Message 
                     time="Today, 6:00PM"
                     text = 'Tonight, 3 friends will be gaming at the average time of 7:45PM EST'
                     response={false}
+                    initial={{opacity:0, x: -20}}
+                    animate={{ opacity:1, x: 0 }}
+                    transition={{ delay:8, type:'spring', stiffness: 20}}
                 />
-            </motion.div>
+            </div>
             <div className='flex p-2 justify-between items-center gap-2 px-4 pb-3'>
                 <IoIosCamera className="text-[#999] h-7 w-7"/>
                 <IoIosAppstore className="text-[#999] h-6 w-6"/>
