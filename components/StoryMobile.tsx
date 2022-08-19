@@ -1,5 +1,5 @@
 import type { NextPage} from "next";
-import { motion } from 'framer-motion'
+
 import { IoIosCamera, IoIosAppstore } from 'react-icons/io'
 import { FaArrowCircleUp } from 'react-icons/fa'
 
@@ -8,11 +8,7 @@ import Message from "./Message";
 
 const Story: NextPage = () => {
     return (
-        <motion.div
-            className="flex flex-col rounded-3xl bg-white min-h-[500px] min-w-[280px] w-[280px] border-4 border-black shadow-xl order-1 sm:order-3"
-            animate={{ x: 100 }}
-            transition={{ type: "spring", stiffness: 100 }}
-        >
+        <div className="flex flex-col rounded-3xl bg-white min-h-[500px] min-w-[280px] w-[280px] border-4 border-black shadow-xl">
             <div className="flex flex-col bg-[#ECECED] rounded-t-3xl  items-center w-full border-b border-[#E9E9EB]">
                 <div className="bg-black w-1/2 z-20 h-5 rounded-b-xl flex justify-center items-center">
                     <div className="flex gap-1">
@@ -62,7 +58,7 @@ const Story: NextPage = () => {
                 </div>
             </div>
             <div className="bg-black h-1 w-[40%] rounded-xl self-center mb-2"></div>
-        </motion.div>
+        </div>
     )
 }
 
