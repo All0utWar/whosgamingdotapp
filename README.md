@@ -1,34 +1,40 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+SUPABASE HACKATHON CHECKLIST - 
 
-## Getting Started
+1.) link to hosted demo - http://www.WhosGaming.app/
+    link to github repo - https://github.com/austincalvelage/whosgamingdotapp
 
-First, run the development server:
+2.) const Team Members = [
+        {
+            name: Austin Calvelage,
+            github: https://github.com/austincalvelage,
+            twitter: https://www.twitter.com/austincalvelage
+        },
+        {
+            name: Alex Calvelage,
+            github: https://github.com/All0utWar,
+            twitter: https://twitter.com/alexcalvelage
+        },
+    ]
 
-```bash
-npm run dev
-# or
-yarn dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3.) any demo videos, instructions, or memes
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+4.) a brief description of how you used Supabase: to store data?, realtime?, auth?, storage?
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+5.) any other info you want the judges to know (motivations/ideas/process)
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+6.)*optional* team photo
 
-## Learn More
+Rules
+Team size 1-5 (all team members on winning teams will receive a prize)
+You cannot be in multiple teams
+All design elements, code, etc. for your project/feature must be created during the event
+All entries must be Open Source (link to source code required in entry)
+Must use Supabase in some capacity
+Can be any language or framework
+You can continue to make updates to your project after the submission deadline, but there is no guarantee that the judges will see additions made after the submission time.
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+** What needs Done **
+1. SupaBase auth integration / storage
+2. SMS built using Express paired with the twilio app.
+3. Build out UI
